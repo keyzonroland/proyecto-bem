@@ -20,7 +20,9 @@
     <main class="main">
         <article class="article" id="articulo">
             <h1 class="article__title">Título del Artículo</h1>
-            <p class="article__text">Este es un párrafo de ejemplo para el artículo principal. Aquí se explica el propósito de la página y se muestra cómo organizar el contenido usando BEM.</p>
+            <p class="article__text">Lorem ipsum dolor sit amet consectetur adipiscing elit suspendisse cras, sociis ac dictum lectus porta egestas imperdiet. Phasellus egestas ad taciti urna nibh luctus, natoque interdum nostra ligula et pellentesque tempor, senectus curae aenean lobortis venenatis. Ut faucibus vulputate facilisi senectus elementum sodales mus neque torquent, id litora hac ultrices ornare cum non praesent, maecenas aliquam ultricies egestas vel himenaeos magnis porta.
+
+Pulvinar urna non senectus dictum molestie cum cursus dignissim, facilisi purus morbi phasellus vulputate odio pharetra, massa ante porta ridiculus turpis faucibus bibendum. Ac tempor suscipit dictumst senectus donec lectus nec varius egestas massa, nisi aliquet montes vehicula convallis mi ut fringilla curabitur dictum, ad faucibus fusce non nunc primis vel vivamus imperdiet. Montes venenatis netus et aptent non torquent mus ultricies, posuere cum habitasse scelerisque enim pretium magnis nam mi, sodales erat bibendum ultrices sapien dictumst ac.</p>
             <p class="article__text">La metodología BEM ayuda a mantener el código CSS modular y escalable.</p>
             <img class="article__image" src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo">
         </article>
@@ -44,12 +46,39 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="footer__info">&copy; 2025 Mi Sitio Web</div>
-        <div class="footer__social">
-            <a class="footer__social-link" href="#">Twitter</a>
-            <a class="footer__social-link" href="#">Facebook</a>
-            <a class="footer__social-link" href="#">Instagram</a>
+        <div class="footer__container">
+            <div class="footer__links">
+                <h4 class="footer__title">Compañía</h4> <br>
+                <ul class="footer__list">
+                    <li class="footer__item"><a class="footer__link" href="">Nosotros</a></li>
+                    <li class="footer__item"><a class="footer__link" href="">Nuestros Servicios</a></li>
+                    <li class="footer__item"><a class="footer__link" href="">Política de privacidad</a></li>
+                </ul>
+            </div>
+            <div class="footer__social-section">
+                <h4 class="footer__title">Síguenos</h4>
+                <div class="footer__social">
+                    <a class="footer__social-link" href="#" aria-label="Twitter">Twitter</a>
+                    <a class="footer__social-link" href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px;"><path d="M22.675 0h-21.35C.595 0 0 .592 0 1.326v21.348C0 23.408.595 24 1.325 24h11.495v-9.294H9.691v-3.622h3.129V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116C23.406 24 24 23.408 24 22.674V1.326C24 .592 23.406 0 22.675 0"/></svg>
+                        Facebook
+                    </a>
+                    <a class="footer__social-link" href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="vertical-align:middle;margin-right:6px;"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.334 3.608 1.308.974.974 1.246 2.241 1.308 3.608.058 1.266.069 1.646.069 4.85s-.012 3.584-.07 4.85c-.062 1.366-.334 2.633-1.308 3.608-.974.974-2.241 1.246-3.608 1.308-1.266.058-1.646.069-4.85.069s-3.584-.012-4.85-.07c-1.366-.062-2.633-.334-3.608-1.308-.974-.974-1.246-2.241-1.308-3.608C2.175 15.647 2.163 15.267 2.163 12s.012-3.584.07-4.85c.062-1.366.334-2.633 1.308-3.608C4.515 2.567 5.782 2.295 7.148 2.233 8.414 2.175 8.794 2.163 12 2.163zm0-2.163C8.741 0 8.332.012 7.052.07 5.771.128 4.659.388 3.678 1.37 2.697 2.352 2.437 3.464 2.379 4.745 2.321 6.025 2.309 6.434 2.309 12c0 5.566.012 5.975.07 7.255.058 1.281.318 2.393 1.299 3.375.981.981 2.093 1.241 3.374 1.299 1.28.058 1.689.07 7.255.07s5.975-.012 7.255-.07c1.281-.058 2.393-.318 3.374-1.299.981-.981 1.241-2.093 1.299-3.374.058-1.28.07-1.689.07-7.255s-.012-5.975-.07-7.255c-.058-1.281-.318-2.393-1.299-3.374-.981-.981-2.093-1.241-3.374-1.299C17.975.012 17.566 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a3.999 3.999 0 1 1 0-7.998 3.999 3.999 0 0 1 0 7.998zm6.406-11.845a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z"/></svg>
+                        Instagram
+                    </a>
+                </div>
+                <h4 class="footer__title">Suscríbete</h4>
+                <form class="footer__form">
+                    <input class="footer__input" type="email" placeholder="Correo">
+                    <input class="footer__button btn" type="submit" value="Enviar">
+                </form>
+            </div>
         </div>
-    </footer>
+        <div class="footer__text" style="text-align: center;">
+            <p>Te lo vendo &copy; 2025</p>
+            <p>Todos los derechos reservados</p>
+        </div>
+    </footer>    
 </body>
 </html>
