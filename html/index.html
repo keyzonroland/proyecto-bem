@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto BEM</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">MiLogo</div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active"><a href="#">Inicio</a></li>
+                <li class="nav__item"><a href="#articulo">Artículo</a></li>
+                <li class="nav__item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <article class="article" id="articulo">
+            <h1 class="article__title">Título del Artículo</h1>
+            <p class="article__text">Este es un párrafo de ejemplo para el artículo principal. Aquí se explica el propósito de la página y se muestra cómo organizar el contenido usando BEM.</p>
+            <p class="article__text">La metodología BEM ayuda a mantener el código CSS modular y escalable.</p>
+            <img class="article__image" src="https://via.placeholder.com/400x200" alt="Imagen de ejemplo">
+        </article>
+        <section class="contact" id="contacto">
+            <h2 class="contact__title">Contacto</h2>
+            <form class="contact__form">
+                <div class="contact__form-group">
+                    <label class="contact__label" for="nombre">Nombre:</label>
+                    <input class="contact__input" type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="contact__form-group">
+                    <label class="contact__label" for="email">Email:</label>
+                    <input class="contact__input" type="email" id="email" name="email" required>
+                </div>
+                <div class="contact__form-group">
+                    <label class="contact__label" for="mensaje">Mensaje:</label>
+                    <textarea class="contact__input" id="mensaje" name="mensaje" required></textarea>
+                </div>
+                <button class="contact__button" type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__info">&copy; 2025 Mi Sitio Web</div>
+        <div class="footer__social">
+            <a class="footer__social-link" href="#">Twitter</a>
+            <a class="footer__social-link" href="#">Facebook</a>
+            <a class="footer__social-link" href="#">Instagram</a>
+        </div>
+    </footer>
+</body>
+</html>
