@@ -9,11 +9,9 @@ body {
     transition: background-color 0.3s, color 0.3s;
 }
 .header {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: #161616;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     background: #6c63ff;
     padding: 20px;
     color: #fff;
@@ -21,10 +19,25 @@ body {
 .header__logo {
     font-size: 2rem;
     font-weight: bold;
+    flex: 1;
 }
-.header__nav {
+.nav {
+    flex: 2;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+.nav__link {
+    color: #f8f8ff; /* color claro */
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.2rem;
+    transition: color 0.2s;
+    letter-spacing: 0.5px;
+}
+
+.nav__link:hover {
+    color: #ffe066; /* color de acento claro al pasar el mouse */
+    text-decoration: none;
 }
 .nav__list {
     display: flex;
@@ -32,6 +45,8 @@ body {
     list-style: none;
     margin: 0;
     padding: 0;
+    justify-content: center;
+    width: 100%;
 }
 .nav__item {
     padding: 8px 16px;
@@ -43,6 +58,32 @@ body {
 .nav__item:hover {
     background: #483d8b;
     color: #fff;
+}
+
+.header__search {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.header__search-input {
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    font-size: 1rem;
+}
+.header__search-button {
+    padding: 8px 16px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background: #483d8b;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+.header__search-button:hover {
+    background: #2d265c;
 }
 
 .main {
@@ -253,6 +294,19 @@ footer {
     .footer__links, .footer__social-section {
         width: 100%;
         padding: 10px 0;
+    }
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav {
+        width: 100%;
+        justify-content: center;
+    }
+    .header__search {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
     }
 }
 @media (max-width: 600px) {
